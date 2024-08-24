@@ -9,11 +9,12 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v4
 
-      - name: render pcb image
+      - name: render usb-c psu pcb image
         uses: linalinn/kicad-render@main
         with:
           pcb_file: "usb-c psu/usb-c psu.kicad_pcb"
-          output_path: ${{ github.workspace }}/images
+          output_path: "${{ github.workspace }}/images/usbc"
+          background: "transparent"
         
       - name: Setup Pages
         if: github.ref == 'refs/heads/main'
