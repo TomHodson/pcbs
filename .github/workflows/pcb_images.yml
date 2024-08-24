@@ -1,6 +1,8 @@
 name: pcb_image
 on:
   push:
+    paths:
+      - '**.kicad_pcb'
 jobs:
   render-image:
     name: render-image
