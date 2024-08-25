@@ -14,7 +14,7 @@ jobs:
       - name: render usb-c psu pcb image
         uses: linalinn/kicad-render@main
         with:
-          pcb_file: "usb-c psu/usb-c_psu.kicad_pcb"
+          pcb_file: "usb-c_su/usb-c_psu.kicad_pcb"
           output_path: "${{ github.workspace }}/images/usbc"
           background: "transparent"
         
